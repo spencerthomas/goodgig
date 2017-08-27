@@ -18,11 +18,11 @@
 //= require bootstrap-sprockets
 //= require cable
 //= require countdown
-//= require counterup
-//= require gmaps
-//= require inview
-//= require jquery-te
+//= require counterup.min
+//= require gmaps.min
+//= require inview.min
+//= require jquery-te.min
 //= require main
-//= require slick
-//= require waypoints
+//= require slick.min
+//= require waypoints.min
 
