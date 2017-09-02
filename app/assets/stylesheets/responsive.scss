@@ -10,9 +10,7 @@
 		position: relative;
 	}	
 	.tr-header .btn.btn-primary {
-		position: absolute;
 		right: 0;
-		top: 56px;
 		z-index: 99999999;
 		padding: 8px 20px;
 	}
@@ -142,7 +140,6 @@
 		margin: 0;
 	}
 	.cta-info .btn.btn-primary {
-		margin-top: 10px;
 	}
 	.cta-info .pull-left {
 		text-align: right;
@@ -345,8 +342,6 @@
 		padding: 0;
 	}
 	.tr-header .btn.btn-primary {
-		position: absolute;
-		top: 18px;
 		right: 70px;
 		padding: 5px 15px 4px;
 	}	
