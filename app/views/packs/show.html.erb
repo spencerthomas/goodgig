@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @pack.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @pack.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @pack.price %>
+</p>
+
+<p>
+  <strong>Available:</strong>
+  <%= @pack.available %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @pack.image %>
+</p>
+
+<%= link_to 'Edit', edit_pack_path(@pack) %> |
+<%= link_to 'Back', packs_path %>

@@ -34,9 +34,9 @@ module Devise
   #    end
   class ParameterSanitizer
     DEFAULT_PERMITTED_ATTRIBUTES = {
-      sign_in: [:password, :remember_me],
-      sign_up: [:password, :password_confirmation],
-      account_update: [:password, :password_confirmation, :current_password]
+      sign_in: [:password, :remember_me, :first_name, :last_name],
+      sign_up: [:password, :password_confirmation, :first_name, :last_name],
+      account_update: [:password, :password_confirmation, :current_password, :first_name, :last_name]
     }
 
     def initialize(resource_class, resource_name, params)

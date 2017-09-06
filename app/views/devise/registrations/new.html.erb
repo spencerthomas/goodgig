@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  
-  <body>
+
   <div class="tr-breadcrumb bg-image section-before">
     <div class="container">
       <div class="breadcrumb-info text-center">
@@ -23,9 +20,16 @@
                 <%= devise_error_messages! %>
                 <div class="account-content">
                   <form action="#" class="tr-form">
-                    <div class="form-group">
+
+                  <div class="form-group">
+                    <%= f.text_field :first_name, autofocus: true, label: false, placeholder: "First name", class: "form-control" %>
+                   </div>
+                  <div class="form-group">
+                    <%= f.text_field :last_name, autofocus: true, label: false, placeholder: "Last name", class: "form-control" %>
+                   </div>
+                  <div class="form-group">
                     <%= f.email_field :email, autofocus: true, label: false, placeholder: "Email", class: "form-control" %>
-                    </div>
+                   </div>
                     <div class="form-group">
                       <%= f.password_field :password, autocomplete: "off", label: false, placeholder: "Password", class: "form-control" %>
                     </div>
@@ -49,91 +53,4 @@
     </div><!-- container -->
   </div><!-- /.tr-account-->  
 
-  <div class="footer">
-    <div class="footer-top section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="footer-widget">
-              <h3>About Us</h3>
-              <ul class="tr-list">
-                <li><a href="#">About Seeker</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">International Partners</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Feedback</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="footer-widget">
-              <h3>Job Seekers</h3>
-              <ul class="tr-list">
-                <li><a href="#">Create Account</a></li>
-                <li><a href="#">Career Counseling</a></li>
-                <li><a href="#">My Bdjobs</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Video Guides</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="footer-widget">
-              <h3>Employers</h3>
-              <ul class="tr-list">
-                <li><a href="#">Create Account</a></li>
-                <li><a href="#">Products/Service</a></li>
-                <li><a href="#">Post a Job</a></li>
-                <li><a href="#">FAQ</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="footer-widget">
-              <h3>Newsletter</h3>
-              <p>Earum cumque doloribus, incidunt! Tempora voluptatibus</p>
-              <form class="contact-form" method="post" action="#">
-                <div class="form-group">
-                    <input type="email" class="form-control" required="required" placeholder="Your email Id">
-                </div>             
-                  <div class="form-group">
-                      <button type="submit" class="btn btn-primary">Sign Up</button>
-                  </div>
-              </form>
-            </div>
-          </div>
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </div><!-- /.footer-top -->
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="copyright">
-          <p>Copyright © 2017 <a href="#">Seeker.com.</a> All rights reserved.</p>
-        </div>
-        <div class="footer-social pull-right">
-          <ul class="tr-list">
-            <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div><!-- /.footer-bottom -->
-  </div><!-- /.footer -->
 
-
-    <!-- JS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/inview.min.js"></script>
-    <script src="js/counterup.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery-te.min.js"></script>
-    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="js/gmaps.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
-</html> 
