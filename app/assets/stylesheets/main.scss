@@ -102,6 +102,13 @@ input:focus, textarea:focus, select:focus,
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	width: 100%;
+	height: auto;
+}
+
+.cover {
+	width: 100%;
+	position: relative;
 }
 
 .section-padding {
@@ -268,7 +275,7 @@ input:focus, textarea:focus, select:focus,
 	color: #fff;
 	padding: 100px 0;
 	overflow: hidden;
-	background-image: image_tag("assets/images/bg/banner.png");
+	background-image: image_tag("wall.jpg");
 }
 
 .page-title h1 {
