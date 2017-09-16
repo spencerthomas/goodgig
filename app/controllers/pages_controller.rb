@@ -1,9 +1,10 @@
 class PagesController < ApplicationController
 	def index
+		@pack = Pack.all
 	end
 
-	def show
-		render template: "pages/#{params[:page]}"
+	def listing
 	end
+
 
 end

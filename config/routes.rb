@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   
-  devise_for :companies
   resources :jobs
   resources :packs
 
@@ -12,8 +11,8 @@ Rails.application.routes.draw do
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  root "pages#show", page: "index"
+  root "pages#index" # page: "index"
   
-  get "/pages/:page" => "pages#show"
+  get '/pages/listing' => "pages#listing"
 
   end

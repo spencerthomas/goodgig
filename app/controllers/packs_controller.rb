@@ -1,6 +1,6 @@
 class PacksController < ApplicationController
   before_action :set_pack, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, only: [:create, :new, :edit, :update, :destroy]
   # GET /packs
   # GET /packs.json
   def index
@@ -24,7 +24,7 @@ class PacksController < ApplicationController
   # POST /packs
   # POST /packs.json
   def create
-    @pack = Pack.new(pack_params)
+    @pack = current_user.packs.new(pack_params)
 
     respond_to do |format|
       if @pack.save

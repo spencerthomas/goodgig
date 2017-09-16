@@ -12,7 +12,7 @@
 					<ul class="sign-in tr-list">
 					<% if user_signed_in? %>
 						<%= link_to "Account", edit_user_registration_path, class: "btn btn-outline-secondary" %>
-						<%= link_to "Sign Out", destroy_user_session_path, class: "btn btn-danger" %>
+						<%= link_to "Sign Out",  class: "btn btn-danger" %>
 					<% else %>
 						<li><i class="fa fa-user"></i></li>
 						<li><%= link_to "Sign In", new_user_session_path %></li>
